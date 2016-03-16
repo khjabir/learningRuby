@@ -20,3 +20,15 @@ while !($i > $num)  do
    puts("Inside the loop i = #$i" )
    $i +=1;
 end
+
+# same as if, unless and while, until also got the position of modifier
+
+puts "using until as modifier"
+
+$i = 0
+$num = 5
+
+begin
+	puts("Inside the loop i = #{$i}")
+	$i += 1
+end until $i > $num
